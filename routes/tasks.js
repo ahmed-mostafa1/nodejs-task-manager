@@ -1,13 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const {
-  getAllTasks,
-  getOneTask,
-  createTask,
-  updateTask,
-  deleteTask,
-} = require("../controlers/tasks");
+const { getAllTasks, getOneTask, createTask, updateTask, deleteTask } =
+  require("../controlers/tasks").default;
 
 // CRUD methods for /api/v1/tasks
 // get all tasks && Create a task
